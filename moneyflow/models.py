@@ -13,6 +13,10 @@ class Document(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     type = models.CharField(max_length=20, choices=Type.choices)
     file = models.FileField(upload_to="docs/%Y-%m/")
+    owner = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
 
 
 class Category(models.Model):
