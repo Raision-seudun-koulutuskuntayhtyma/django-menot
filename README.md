@@ -3,11 +3,13 @@ Menojen seurantaohjelma (Django-harjoitteluprojekti)
 
 ## Modelit
 
-* Tilitapahtuma
+* Tili (Account)
+* Tilitapahtuma (Transaction)
   - Tyyppi: Tulo, Meno
   - Tila: Tuleva, Tapahtunut
   - Tositteet
-* Tosite (lasku tai kuitti)
-* Kategoria
+* Dokumentti (Document)
+  - Käytännössä tiedosto, esim. lasku tai kuitti
+* Kategoria (Category)
   - Esim. autoilu, polttoaineet, säästöt, koti, jne.
-* Käyttäjä (Tulee Djangosta)
+* Käyttäjä (User) (Tulee Djangosta)
