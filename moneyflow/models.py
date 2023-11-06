@@ -22,6 +22,7 @@ class OwnedModel(models.Model):
 
 class Document(TimestampModel, OwnedModel):
     class Type(models.TextChoices):
+        # KOODI_NIMI = ("TIETOKANTAAN TALLENNETTAVA", _("Käyttäjälle näkyvä"))
         BILL = ("BILL", _("Lasku"))
         RECEIPT = ("RECEIPT", _("Kuitti"))
         CALCULATION = ("CALCULATION", _("Laskelma"))
