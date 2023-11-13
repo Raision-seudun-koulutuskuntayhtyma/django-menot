@@ -87,10 +87,8 @@ msgid "account"
 msgstr "tili"
 
 #: moneyflow/models.py:103
-#, fuzzy
-#| msgid "account"
 msgid "accounts"
-msgstr "tili"
+msgstr "tilit"
 
 #: moneyflow/models.py:111
 msgid "Income"
@@ -131,6 +129,3 @@ msgstr "tilitapahtuma"
 #: moneyflow/models.py:162
 msgid "transactions"
 msgstr "tilitapahtumat"
-
-#~ msgid "tilit"
-#~ msgstr "accounts"
