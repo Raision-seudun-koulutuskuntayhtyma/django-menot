@@ -118,6 +118,7 @@ class Transaction(TimestampModel):
     account = models.ForeignKey(
         Account,
         on_delete=models.RESTRICT,
+        related_name="transactions",
         verbose_name=_("account"),
     )
     type = models.CharField(
