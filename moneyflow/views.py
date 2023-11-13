@@ -21,6 +21,7 @@ class AccountView(View):
 class AccountsList(LoginRequiredMixin, AccountView, ListView):
     pass
 
+
 class AccountDetail(LoginRequiredMixin, AccountView, DetailView):
     pass
 
