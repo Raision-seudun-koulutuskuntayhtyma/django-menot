@@ -23,7 +23,10 @@ class AccountsList(LoginRequiredMixin, AccountView, ListView):
 
 
 class AccountDetail(LoginRequiredMixin, AccountView, DetailView):
-    pass
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["transactions"] = self.object.transactions.all()
+        return context
 
 
 @login_required

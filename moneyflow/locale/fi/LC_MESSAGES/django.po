@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 15:01+0200\n"
+"POT-Creation-Date: 2023-11-13 15:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr "Laskelma"
 msgid "Other"
 msgstr "Muu"
 
-#: moneyflow/models.py:38 moneyflow/models.py:126
+#: moneyflow/models.py:38 moneyflow/models.py:127
 msgid "type"
 msgstr "tyyppi"
 
@@ -62,7 +62,7 @@ msgstr "tiedosto"
 msgid "document"
 msgstr "dokumentti"
 
-#: moneyflow/models.py:52 moneyflow/models.py:157
+#: moneyflow/models.py:52 moneyflow/models.py:158
 msgid "documents"
 msgstr "dokumentit"
 
@@ -70,7 +70,7 @@ msgstr "dokumentit"
 msgid "parent category"
 msgstr "yläkategoria"
 
-#: moneyflow/models.py:73 moneyflow/models.py:151
+#: moneyflow/models.py:73 moneyflow/models.py:152
 msgid "category"
 msgstr "kategoria"
 
@@ -82,7 +82,7 @@ msgstr "kategoriat"
 msgid "bank account"
 msgstr "pankkitili"
 
-#: moneyflow/models.py:102 moneyflow/models.py:121
+#: moneyflow/models.py:102 moneyflow/models.py:122
 msgid "account"
 msgstr "tili"
 
@@ -106,31 +106,43 @@ msgstr "Tuleva"
 msgid "Done"
 msgstr "Tapahtunut"
 
-#: moneyflow/models.py:131
+#: moneyflow/models.py:132
 msgid "state"
 msgstr "tila"
 
-#: moneyflow/models.py:134
+#: moneyflow/models.py:135
 msgid "date"
 msgstr "päiväys"
 
-#: moneyflow/models.py:139
+#: moneyflow/models.py:140
 msgid "amount"
 msgstr "määrä"
 
-#: moneyflow/models.py:144
+#: moneyflow/models.py:145
 msgid "comment"
 msgstr "kommentti"
 
-#: moneyflow/models.py:161
+#: moneyflow/models.py:162
 msgid "transaction"
 msgstr "tilitapahtuma"
 
-#: moneyflow/models.py:162
+#: moneyflow/models.py:163
 msgid "transactions"
 msgstr "tilitapahtumat"
 
-#: moneyflow/templates/moneyflow/accounts.html:6
+#: moneyflow/templates/moneyflow/account_detail.html:6
+msgid "Account"
+msgstr "Tili"
+
+#: moneyflow/templates/moneyflow/account_detail.html:8
+msgid "Transactions"
+msgstr "Tilitapahtumat"
+
+#: moneyflow/templates/moneyflow/account_detail.html:16
+msgid "No transactions"
+msgstr "Ei tilitapahtumia"
+
+#: moneyflow/templates/moneyflow/account_list.html:6
 #: moneyflow/templates/moneyflow/base.html:40
 msgid "Accounts"
 msgstr "Tilit"
