@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 15:56+0200\n"
+"POT-Creation-Date: 2023-11-20 14:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgid "Toggle navigation visibility"
 msgstr "Näytä tai piilota navigaatio"
 
 #: moneyflow/templates/moneyflow/base.html:47
-#: moneyflow/templates/moneyflow/documents.html:6
+#: moneyflow/templates/moneyflow/document_list.html:6
 msgid "Documents"
 msgstr "Dokumentit"
 
