@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import include, path
 
 import moneyflow.urls
+import users.urls
 
 urlpatterns = [
     path("", include(moneyflow.urls)),
+    path("kayttajatilit/", include(users.urls)),
     path('admin/', admin.site.urls),
 ]
