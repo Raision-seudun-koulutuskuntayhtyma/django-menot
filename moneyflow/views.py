@@ -31,3 +31,7 @@ class AccountDetail(OwnerFilteredMixin, DetailView):
 
 class DocumentList(OwnerFilteredMixin, ListView):
     model = Document
+
+
+class DocumentDetail(OwnerFilteredMixin, DetailView):
+    model = Document
