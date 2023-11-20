@@ -11,27 +11,23 @@ def frontpage(request):
     return render(request, "moneyflow/index.html")
 
 
-class AccountView(View):
-    model = Account
-
+class OwnerFilteredMixin(LoginRequiredMixin):
     def get_queryset(self):
         return super().get_queryset().filter(owner=self.request.user)
 
 
-class AccountsList(LoginRequiredMixin, AccountView, ListView):
-    pass
+class AccountList(OwnerFilteredMixin, ListView):
+    model = Account
 
 
-class AccountDetail(LoginRequiredMixin, AccountView, DetailView):
+class AccountDetail(OwnerFilteredMixin, DetailView):
+    model = Account
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["transactions"] = self.object.transactions.all()
         return context
 
 
-@login_required
-def documents(request):
-    context = {
-        "documents": Document.objects.filter(owner=request.user),
-    }
-    return render(request, "moneyflow/documents.html", context)
+class DocumentList(OwnerFilteredMixin, ListView):
+    model = Document
