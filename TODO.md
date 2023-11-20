@@ -3,7 +3,7 @@
 * [x] Käännöstiedostot
 * [x] Muunna Document-lista käyttämään class-based-viewejä
 * [x] Kirjautuminen tavallisena käyttäjänä
-* [ ] Uloskirjautumislinkki
+* [x] Uloskirjautumislinkki
 * [ ] Documentin detail-näkymä
 * [ ] Peruskategoriat
 * - Uuden käyttäjän luonnin jälkeen pitäisi pystyä tekemään hänelle
