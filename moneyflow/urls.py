@@ -22,4 +22,9 @@ urlpatterns = [
         views.CategoryDetail.as_view(),
         name="category-detail",
     ),
+    path(
+        "kategoriat/uusi/",
+        views.CategoryCreate.as_view(),
+        name="category-new",
+    ),
 ]

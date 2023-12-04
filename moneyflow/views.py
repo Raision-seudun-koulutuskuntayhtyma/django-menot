@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
-from django.views.generic import DetailView, ListView, View
+from django.views.generic import CreateView, DetailView, ListView
 
 from .models import Account, Category, Document
 
@@ -14,6 +14,14 @@ def frontpage(request):
 class OwnerFilteredMixin(LoginRequiredMixin):
     def get_queryset(self):
         return super().get_queryset().filter(owner=self.request.user)
+
+
+class OwnerAutoFillingCreateView(OwnerFilteredMixin, CreateView):
+    def form_valid(self, form):
+        form.save(commit=False)
+        if not form.instance.owner_id:
+            form.instance.owner = self.request.user
+        return super().form_valid(form)
 
 
 class AccountList(OwnerFilteredMixin, ListView):
@@ -43,3 +51,8 @@ class CategoryList(OwnerFilteredMixin, ListView):
 
 class CategoryDetail(OwnerFilteredMixin, DetailView):
     model = Category
+
+
+class CategoryCreate(OwnerAutoFillingCreateView):
+    model = Category
+    fields = ["name", "parent"]
