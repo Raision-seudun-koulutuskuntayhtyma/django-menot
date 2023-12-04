@@ -6,7 +6,10 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("moneyflow", "0007_alter_account_options_alter_category_options_and_more"),
+        (
+            "moneyflow",
+            "0007_alter_account_options_alter_category_options_and_more",
+        ),
     ]
 
     operations = [

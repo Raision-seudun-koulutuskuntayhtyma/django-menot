@@ -18,11 +18,17 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterModelOptions(
             name="category",
-            options={"verbose_name": "kategoria", "verbose_name_plural": "kategoriat"},
+            options={
+                "verbose_name": "kategoria",
+                "verbose_name_plural": "kategoriat",
+            },
         ),
         migrations.AlterModelOptions(
             name="document",
-            options={"verbose_name": "dokumentti", "verbose_name_plural": "dokumentit"},
+            options={
+                "verbose_name": "dokumentti",
+                "verbose_name_plural": "dokumentit",
+            },
         ),
         migrations.AlterModelOptions(
             name="transaction",
@@ -41,7 +47,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="account",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="luotu"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="luotu"
+            ),
         ),
         migrations.AlterField(
             model_name="account",
@@ -60,7 +68,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="category",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="luotu"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="luotu"
+            ),
         ),
         migrations.AlterField(
             model_name="category",
@@ -91,17 +101,23 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="document",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="luotu"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="luotu"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
             name="file",
-            field=models.FileField(upload_to="docs/%Y-%m/", verbose_name="tiedosto"),
+            field=models.FileField(
+                upload_to="docs/%Y-%m/", verbose_name="tiedosto"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
             name="name",
-            field=models.CharField(blank=True, max_length=100, verbose_name="nimi"),
+            field=models.CharField(
+                blank=True, max_length=100, verbose_name="nimi"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
@@ -156,7 +172,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="transaction",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="luotu"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="luotu"
+            ),
         ),
         migrations.AlterField(
             model_name="transaction",

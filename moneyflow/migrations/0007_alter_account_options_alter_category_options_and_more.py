@@ -14,15 +14,24 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name="account",
-            options={"verbose_name": "account", "verbose_name_plural": "accounts"},
+            options={
+                "verbose_name": "account",
+                "verbose_name_plural": "accounts",
+            },
         ),
         migrations.AlterModelOptions(
             name="category",
-            options={"verbose_name": "category", "verbose_name_plural": "categories"},
+            options={
+                "verbose_name": "category",
+                "verbose_name_plural": "categories",
+            },
         ),
         migrations.AlterModelOptions(
             name="document",
-            options={"verbose_name": "document", "verbose_name_plural": "documents"},
+            options={
+                "verbose_name": "document",
+                "verbose_name_plural": "documents",
+            },
         ),
         migrations.AlterModelOptions(
             name="transaction",
@@ -35,13 +44,18 @@ class Migration(migrations.Migration):
             model_name="account",
             name="bank_account",
             field=models.CharField(
-                blank=True, max_length=50, null=True, verbose_name="bank account"
+                blank=True,
+                max_length=50,
+                null=True,
+                verbose_name="bank account",
             ),
         ),
         migrations.AlterField(
             model_name="account",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="created at"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="created at"
+            ),
         ),
         migrations.AlterField(
             model_name="account",
@@ -60,7 +74,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="category",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="created at"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="created at"
+            ),
         ),
         migrations.AlterField(
             model_name="category",
@@ -91,17 +107,23 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="document",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="created at"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="created at"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
             name="file",
-            field=models.FileField(upload_to="docs/%Y-%m/", verbose_name="file"),
+            field=models.FileField(
+                upload_to="docs/%Y-%m/", verbose_name="file"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
             name="name",
-            field=models.CharField(blank=True, max_length=100, verbose_name="name"),
+            field=models.CharField(
+                blank=True, max_length=100, verbose_name="name"
+            ),
         ),
         migrations.AlterField(
             model_name="document",
@@ -156,12 +178,16 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="transaction",
             name="comment",
-            field=models.CharField(blank=True, max_length=200, verbose_name="comment"),
+            field=models.CharField(
+                blank=True, max_length=200, verbose_name="comment"
+            ),
         ),
         migrations.AlterField(
             model_name="transaction",
             name="created_at",
-            field=models.DateTimeField(auto_now_add=True, verbose_name="created at"),
+            field=models.DateTimeField(
+                auto_now_add=True, verbose_name="created at"
+            ),
         ),
         migrations.AlterField(
             model_name="transaction",
