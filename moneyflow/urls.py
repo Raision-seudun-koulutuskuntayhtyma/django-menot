@@ -27,4 +27,9 @@ urlpatterns = [
         views.CategoryCreate.as_view(),
         name="category-new",
     ),
+    path(
+        "kategoriat/luo-oletuskategoriat/",
+        views.CreateDefaultCategoriesFormView.as_view(),
+        name="category-create-defaults",
+    ),
 ]
