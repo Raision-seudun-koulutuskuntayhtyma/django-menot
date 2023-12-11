@@ -5,7 +5,7 @@
 * [x] Kirjautuminen tavallisena käyttäjänä
 * [x] Uloskirjautumislinkki
 * [x] Documentin detail-näkymä
-* [X] Peruskategoriat
+* [x] Peruskategoriat
   - Uuden käyttäjän luonnin jälkeen pitäisi pystyä tekemään hänelle
     peruskategoriat, jotta ei tarvi aina tehdä niitä uudelleen.
   - Lisäksi tämä auttaisi kun projetin tietokannan luo uudelleen.
