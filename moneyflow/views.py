@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView, FormView, ListView
+from django.views.generic import CreateView, DetailView, FormView, ListView, DeleteView
 
 from .models import Account, Category, Document
 
@@ -58,6 +58,11 @@ class CategoryDetail(OwnerFilteredMixin, DetailView):
 class CategoryCreate(OwnerAutoFillingCreateView):
     model = Category
     fields = ["name", "parent"]
+
+
+class CategoryDelete(OwnerFilteredMixin, DeleteView):
+    model = Category
+    success_url = reverse_lazy("categories")
 
 
 class CreateDefaultCategoriesForm(forms.Form):
