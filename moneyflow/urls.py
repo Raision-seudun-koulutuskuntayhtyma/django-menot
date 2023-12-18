@@ -10,6 +10,16 @@ urlpatterns = [
         views.AccountDetail.as_view(),
         name="account-detail",
     ),
+    path(
+        "tilit/poista/<int:pk>/",
+        views.AccountDelete.as_view(),
+        name="account-delete",
+    ),
+    path(
+        "tilit/uusi/",
+        views.AccountCreate.as_view(),
+        name="account-new",
+    ),
     path("dokumentit/", views.DocumentList.as_view(), name="documents"),
     path(
         "dokumentit/<int:pk>/",

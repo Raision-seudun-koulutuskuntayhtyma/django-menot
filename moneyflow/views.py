@@ -39,6 +39,16 @@ class AccountDetail(OwnerFilteredMixin, DetailView):
         return context
 
 
+class AccountCreate(OwnerAutoFillingCreateView):
+    model = Account
+    fields = ["name", "bank_account"]
+
+
+class AccountDelete(OwnerFilteredMixin, DeleteView):
+    model = Account
+    success_url = reverse_lazy("accounts")
+
+
 class DocumentList(OwnerFilteredMixin, ListView):
     model = Document
 

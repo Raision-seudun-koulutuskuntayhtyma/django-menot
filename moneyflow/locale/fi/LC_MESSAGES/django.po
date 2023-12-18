@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-18 14:27+0200\n"
+"POT-Creation-Date: 2023-12-18 15:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr "Laskelma"
 msgid "Other"
 msgstr "Muu"
 
-#: moneyflow/models.py:40 moneyflow/models.py:153
+#: moneyflow/models.py:40 moneyflow/models.py:156
 msgid "type"
 msgstr "tyyppi"
 
@@ -62,7 +62,7 @@ msgstr "tiedosto"
 msgid "document"
 msgstr "dokumentti"
 
-#: moneyflow/models.py:54 moneyflow/models.py:184
+#: moneyflow/models.py:54 moneyflow/models.py:187
 msgid "documents"
 msgstr "dokumentit"
 
@@ -70,7 +70,7 @@ msgstr "dokumentit"
 msgid "parent category"
 msgstr "yläkategoria"
 
-#: moneyflow/models.py:75 moneyflow/models.py:178
+#: moneyflow/models.py:75 moneyflow/models.py:181
 msgid "category"
 msgstr "kategoria"
 
@@ -103,7 +103,7 @@ msgstr "Palkka"
 msgid "bank account"
 msgstr "pankkitili"
 
-#: moneyflow/models.py:128 moneyflow/models.py:148
+#: moneyflow/models.py:128 moneyflow/models.py:151
 msgid "account"
 msgstr "tili"
 
@@ -111,62 +111,110 @@ msgstr "tili"
 msgid "accounts"
 msgstr "tilit"
 
-#: moneyflow/models.py:137
+#: moneyflow/models.py:140
 msgid "Income"
 msgstr "Tulo"
 
-#: moneyflow/models.py:138
+#: moneyflow/models.py:141
 msgid "Expense"
 msgstr "Meno"
 
-#: moneyflow/models.py:141
+#: moneyflow/models.py:144
 msgid "Upcoming"
 msgstr "Tuleva"
 
-#: moneyflow/models.py:142
+#: moneyflow/models.py:145
 msgid "Done"
 msgstr "Tapahtunut"
 
-#: moneyflow/models.py:158
+#: moneyflow/models.py:161
 msgid "state"
 msgstr "tila"
 
-#: moneyflow/models.py:161
+#: moneyflow/models.py:164
 msgid "date"
 msgstr "päiväys"
 
-#: moneyflow/models.py:166
+#: moneyflow/models.py:169
 msgid "amount"
 msgstr "määrä"
 
-#: moneyflow/models.py:171
+#: moneyflow/models.py:174
 msgid "comment"
 msgstr "kommentti"
 
-#: moneyflow/models.py:188
+#: moneyflow/models.py:191
 msgid "transaction"
 msgstr "tilitapahtuma"
 
-#: moneyflow/models.py:189
+#: moneyflow/models.py:192
 msgid "transactions"
 msgstr "tilitapahtumat"
 
-#: moneyflow/templates/moneyflow/account_detail.html:6
+#: moneyflow/templates/moneyflow/account_confirm_delete.html:7
+msgid "Delete Account"
+msgstr "Poista tili"
+
+#: moneyflow/templates/moneyflow/account_confirm_delete.html:12
+#, python-format
+msgid ""
+"\n"
+"        Are you sure you want to delete \"%(account)s\"?\n"
+"        "
+msgstr ""
+"\n"
+"Haluatko varmasti poistaa tilin \"%(account)s\"?"
+
+#: moneyflow/templates/moneyflow/account_confirm_delete.html:19
+#: moneyflow/templates/moneyflow/account_detail.html:11
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:19
+#: moneyflow/templates/moneyflow/category_detail.html:11
+msgid "Delete"
+msgstr "Poista"
+
+#: moneyflow/templates/moneyflow/account_confirm_delete.html:25
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:23
+#: moneyflow/templates/moneyflow/category_create_defaults_form.html:23
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: moneyflow/templates/moneyflow/account_detail.html:7
 msgid "Account"
 msgstr "Tili"
 
-#: moneyflow/templates/moneyflow/account_detail.html:8
+#: moneyflow/templates/moneyflow/account_detail.html:15
+msgid "Bank Account"
+msgstr "Pankkitili"
+
+#: moneyflow/templates/moneyflow/account_detail.html:18
 msgid "Transactions"
 msgstr "Tilitapahtumat"
 
-#: moneyflow/templates/moneyflow/account_detail.html:16
+#: moneyflow/templates/moneyflow/account_detail.html:26
 msgid "No transactions"
 msgstr "Ei tilitapahtumia"
+
+#: moneyflow/templates/moneyflow/account_detail.html:32
+msgid "All Accounts"
+msgstr "Kaikki tilit"
+
+#: moneyflow/templates/moneyflow/account_form.html:7
+msgid "New Account"
+msgstr "Uusi tili"
+
+#: moneyflow/templates/moneyflow/account_form.html:14
+#: moneyflow/templates/moneyflow/category_form.html:14
+msgid "Save"
+msgstr "Tallenna"
 
 #: moneyflow/templates/moneyflow/account_list.html:6
 #: moneyflow/templates/moneyflow/base.html:40
 msgid "Accounts"
 msgstr "Tilit"
+
+#: moneyflow/templates/moneyflow/account_list.html:10
+msgid "Create New Account"
+msgstr "Luo uusi tili"
 
 #: moneyflow/templates/moneyflow/base.html:4
 msgctxt "Language code for html lang attribute"
@@ -214,16 +262,6 @@ msgstr ""
 "\n"
 "Haluatko varmasti poistaa kategorian \"%(category)s\"?"
 
-#: moneyflow/templates/moneyflow/category_confirm_delete.html:19
-#: moneyflow/templates/moneyflow/category_detail.html:9
-msgid "Delete"
-msgstr "Poista"
-
-#: moneyflow/templates/moneyflow/category_confirm_delete.html:23
-#: moneyflow/templates/moneyflow/category_create_defaults_form.html:23
-msgid "Cancel"
-msgstr "Peruuta"
-
 #: moneyflow/templates/moneyflow/category_create_defaults_form.html:6
 #: moneyflow/templates/moneyflow/category_list.html:12
 msgid "Create Default Categories"
@@ -242,21 +280,17 @@ msgstr ""
 msgid "Create"
 msgstr "Luo"
 
-#: moneyflow/templates/moneyflow/category_detail.html:6
+#: moneyflow/templates/moneyflow/category_detail.html:7
 msgid "Category"
 msgstr "Kategoria"
 
-#: moneyflow/templates/moneyflow/category_detail.html:13
+#: moneyflow/templates/moneyflow/category_detail.html:17
 msgid "All Categories"
 msgstr "Kaikki kategoriat"
 
 #: moneyflow/templates/moneyflow/category_form.html:7
 msgid "New Category"
 msgstr "Uusi kategoria"
-
-#: moneyflow/templates/moneyflow/category_form.html:14
-msgid "Save"
-msgstr "Tallenna"
 
 #: moneyflow/templates/moneyflow/category_list.html:10
 msgid "Create New Category"
