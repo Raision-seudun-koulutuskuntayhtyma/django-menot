@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-18 10:36+0200\n"
+"POT-Creation-Date: 2023-12-18 14:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,7 +192,11 @@ msgctxt "navigation"
 msgid "Administration"
 msgstr "Ylläpito"
 
-#: moneyflow/templates/moneyflow/base.html:71
+#: moneyflow/templates/moneyflow/base.html:74
+msgid "Language"
+msgstr "Kieli"
+
+#: moneyflow/templates/moneyflow/base.html:108
 msgid "Log out"
 msgstr "Kirjaudu ulos"
 
