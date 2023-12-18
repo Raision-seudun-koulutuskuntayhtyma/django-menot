@@ -11,9 +11,9 @@
   - Lisäksi tämä auttaisi kun projetin tietokannan luo uudelleen.
 * [x] Kategorian poistaminen
 * [x] Kielen vaihtaminen käyttöliittymästä
-* [ ] Tilin luominen käyttöliittymästä
-* [ ] Tilin poistaminen käyttöliittymästä
-* [ ] Tilitapahtuman luominen käyttöliittymästä
+* [x] Tilin luominen käyttöliittymästä
+* [x] Tilin poistaminen käyttöliittymästä
+* [x] Tilitapahtuman luominen käyttöliittymästä
 * [ ] Tilitapahtuman muokkaus käyttöliittymästä
 * [ ] Tiedostojen lataamisen tietoturva
   - Älä päästä lataamaan toisen käyttäjän laskuja tai muita dokumentteja
