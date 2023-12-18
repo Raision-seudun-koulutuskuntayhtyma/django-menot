@@ -3,9 +3,15 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView, FormView, ListView, DeleteView
+from django.views.generic import (
+    CreateView,
+    DetailView,
+    FormView,
+    ListView,
+    DeleteView,
+)
 
-from .models import Account, Category, Document
+from .models import Account, Category, Document, Transaction
 
 
 @login_required
@@ -87,3 +93,34 @@ class CreateDefaultCategoriesFormView(FormView):
     def form_valid(self, form):
         Category.create_defaults(owner=self.request.user)
         return super().form_valid(form)
+
+
+class TransactionCreate(CreateView):
+    model = Transaction
+    fields = [
+        "type",
+        "state",
+        "date",
+        "amount",
+        "comment",
+        "category",
+        "documents",
+    ]
+
+    def form_valid(self, form):
+        # Täytetään luotavaan tilitapahtumaan tilin id
+        form.save(commit=False)
+        if not form.instance.account_id:
+            # Tilin id tulee tänne URL-parametrina (ks. urls.py)
+            form.instance.account_id = self.kwargs["account_id"]
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        # Paluuosoite, johon palataan kun tilitapahtuma on luotu.
+
+        # Haetaan sen tilin detail-näkymä, johon luotu tilitapahtuma
+        # liittyy
+        return reverse_lazy(
+            "account-detail",
+            kwargs={"pk": self.kwargs["account_id"]},
+        )

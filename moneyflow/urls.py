@@ -47,4 +47,11 @@ urlpatterns = [
         views.CreateDefaultCategoriesFormView.as_view(),
         name="category-create-defaults",
     ),
+    # Tilitapahtuman luonnissa käytetään account_id:tä, jotta
+    # tilitapahtuma luodaan ko. tilille
+    path(
+        "tilit/<int:account_id>/uusi-tilitapahtuma/",
+        views.TransactionCreate.as_view(),
+        name="transaction-new",
+    ),
 ]

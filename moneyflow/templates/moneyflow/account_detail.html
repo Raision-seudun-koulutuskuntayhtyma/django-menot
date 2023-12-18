@@ -17,6 +17,13 @@
 
 <h2>{% translate "Transactions" %}</h2>
 
+<div class="btn-group m-3" role="group">
+    <a
+        href="{% url 'transaction-new' account.pk %}"
+        class="btn btn-primary"
+        >{% translate 'Create New Transaction' %}</a>
+</div>
+
 <ul>
     {% for transaction in transactions %}
     <li>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-18 15:04+0200\n"
+"POT-Creation-Date: 2023-12-18 15:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,11 +190,15 @@ msgstr "Pankkitili"
 msgid "Transactions"
 msgstr "Tilitapahtumat"
 
-#: moneyflow/templates/moneyflow/account_detail.html:26
+#: moneyflow/templates/moneyflow/account_detail.html:24
+msgid "Create New Transaction"
+msgstr "Luo uusi tilitapahtuma"
+
+#: moneyflow/templates/moneyflow/account_detail.html:33
 msgid "No transactions"
 msgstr "Ei tilitapahtumia"
 
-#: moneyflow/templates/moneyflow/account_detail.html:32
+#: moneyflow/templates/moneyflow/account_detail.html:39
 msgid "All Accounts"
 msgstr "Kaikki tilit"
 
@@ -204,6 +208,7 @@ msgstr "Uusi tili"
 
 #: moneyflow/templates/moneyflow/account_form.html:14
 #: moneyflow/templates/moneyflow/category_form.html:14
+#: moneyflow/templates/moneyflow/transaction_form.html:14
 msgid "Save"
 msgstr "Tallenna"
 
@@ -303,3 +308,7 @@ msgstr "Dokumentti"
 #: moneyflow/templates/moneyflow/index.html:6
 msgid "Welcome!"
 msgstr "Tervetuloa!"
+
+#: moneyflow/templates/moneyflow/transaction_form.html:7
+msgid "New Transaction"
+msgstr "Uusi tilitapahtuma"
