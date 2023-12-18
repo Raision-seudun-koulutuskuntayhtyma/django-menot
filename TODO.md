@@ -13,6 +13,7 @@
 * [ ] Kielen vaihtaminen käyttöliittymästä
 * [ ] Kategorioiden järjestäminen järkevästi
 * [ ] Kategorian poistamisessa kerro, jos on alikategorioita
+* [ ] Kategorian nimeäminen uudelleen
 * [ ] Tilin luominen käyttöliittymästä
 * [ ] Tilin poistaminen käyttöliittymästä
 * [ ] Tilitapahtuman luominen käyttöliittymästä
