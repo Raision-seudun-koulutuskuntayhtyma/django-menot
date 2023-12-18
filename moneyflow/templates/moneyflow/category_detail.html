@@ -8,4 +8,10 @@
 <a href="{% url 'category-delete' category.pk %}" class="btn btn-danger"
     >{% translate 'Delete' %}</a>
 
+<div class="mt-3">
+    <a href="{% url 'categories' %}" class="btn btn-secondary"
+        >{% translate 'All Categories' %}</a
+    >
+</div>
+
 {% endblock %}
