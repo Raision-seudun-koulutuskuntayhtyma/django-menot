@@ -10,7 +10,7 @@
     peruskategoriat, jotta ei tarvi aina tehdä niitä uudelleen.
   - Lisäksi tämä auttaisi kun projetin tietokannan luo uudelleen.
 * [x] Kategorian poistaminen
-* [ ] Kielen vaihtaminen käyttöliittymästä
+* [x] Kielen vaihtaminen käyttöliittymästä
 * [ ] Tilin luominen käyttöliittymästä
 * [ ] Tilin poistaminen käyttöliittymästä
 * [ ] Tilitapahtuman luominen käyttöliittymästä
