@@ -11,9 +11,6 @@
   - Lisäksi tämä auttaisi kun projetin tietokannan luo uudelleen.
 * [x] Kategorian poistaminen
 * [ ] Kielen vaihtaminen käyttöliittymästä
-* [ ] Kategorioiden järjestäminen järkevästi
-* [ ] Kategorian poistamisessa kerro, jos on alikategorioita
-* [ ] Kategorian nimeäminen uudelleen
 * [ ] Tilin luominen käyttöliittymästä
 * [ ] Tilin poistaminen käyttöliittymästä
 * [ ] Tilitapahtuman luominen käyttöliittymästä
@@ -23,3 +20,6 @@
   - Voidaan toteuttaa esim. tekemällä tiedostojen polut sellaisiksi
     että niitä ei voi arvata (esim. riittävät pitkä random-teksti
     osaksi polkua)
+* [ ] Kategorioiden järjestäminen järkevästi
+* [ ] Kategorian poistamisessa kerro, jos on alikategorioita
+* [ ] Kategorian nimeäminen uudelleen
