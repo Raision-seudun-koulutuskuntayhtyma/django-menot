@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-11 12:07+0200\n"
+"POT-Creation-Date: 2023-12-18 10:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,6 +196,30 @@ msgstr "Ylläpito"
 msgid "Log out"
 msgstr "Kirjaudu ulos"
 
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:7
+msgid "Delete Category"
+msgstr "Poista kategoria"
+
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:12
+#, python-format
+msgid ""
+"\n"
+"        Are you sure you want to delete \"%(category)s\"?\n"
+"        "
+msgstr ""
+"\n"
+"Haluatko varmasti poistaa kategorian \"%(category)s\"?"
+
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:19
+#: moneyflow/templates/moneyflow/category_detail.html:9
+msgid "Delete"
+msgstr "Poista"
+
+#: moneyflow/templates/moneyflow/category_confirm_delete.html:23
+#: moneyflow/templates/moneyflow/category_create_defaults_form.html:23
+msgid "Cancel"
+msgstr "Peruuta"
+
 #: moneyflow/templates/moneyflow/category_create_defaults_form.html:6
 #: moneyflow/templates/moneyflow/category_list.html:12
 msgid "Create Default Categories"
@@ -213,10 +237,6 @@ msgstr ""
 #: moneyflow/templates/moneyflow/category_create_defaults_form.html:19
 msgid "Create"
 msgstr "Luo"
-
-#: moneyflow/templates/moneyflow/category_create_defaults_form.html:23
-msgid "Cancel"
-msgstr "Peruuta"
 
 #: moneyflow/templates/moneyflow/category_detail.html:6
 msgid "Category"

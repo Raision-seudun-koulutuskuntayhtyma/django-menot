@@ -9,8 +9,10 @@
   - Uuden käyttäjän luonnin jälkeen pitäisi pystyä tekemään hänelle
     peruskategoriat, jotta ei tarvi aina tehdä niitä uudelleen.
   - Lisäksi tämä auttaisi kun projetin tietokannan luo uudelleen.
+* [x] Kategorian poistaminen
 * [ ] Kielen vaihtaminen käyttöliittymästä
 * [ ] Kategorioiden järjestäminen järkevästi
+* [ ] Kategorian poistamisessa kerro, jos on alikategorioita
 * [ ] Tilin luominen käyttöliittymästä
 * [ ] Tilin poistaminen käyttöliittymästä
 * [ ] Tilitapahtuman luominen käyttöliittymästä

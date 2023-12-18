@@ -6,14 +6,22 @@
 
 <h1>{% translate "Delete Category" %}</h1>
 
-<form method="post">{% csrf_token %}
+<form method="post">
+    {% csrf_token %}
     <p>
         {% blocktrans %}
         Are you sure you want to delete "{{ category }}"?
         {% endblocktrans %}
     </p>
     {{ form }}
-    <input type="submit" value="Confirm">
+    <input
+        type="submit"
+        value="{% translate 'Delete' %}"
+        class="btn btn-danger"
+    />
+    <a href="{% url 'category-detail' category.pk %}" class="btn btn-secondary"
+        >{% translate 'Cancel' %}</a
+    >
 </form>
 
 {% endblock %}
